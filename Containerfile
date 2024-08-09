@@ -1,4 +1,4 @@
-FROM --platform=$BUILDPLATFORM balenalib/raspberry-pi-debian:latest
+FROM --platform=linux/arm64 balenalib/raspberry-pi-debian:latest
 
 RUN apt-get update && \
     apt-get install -qqy --no-install-recommends wget && \
