@@ -30,6 +30,6 @@ jobs:
           context: .
           platforms: linux/arm/v7,linux/arm64
           build-args: GITHUB_TOKEN=${{ secrets.GITHUB_TOKEN }}
-          tags: ghcr.io/cryi/z-way-container:latest,ghcr.io/cryi/z-way-container:${{ github.ref_name }}
+          tags: ghcr.io/cryi/z-way-container:latest,ghcr.io/cryi/z-way-container:${{ github.sha }}
           push: true
           provenance: false
