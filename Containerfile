@@ -1,4 +1,6 @@
-FROM --platform=linux/arm64 balenalib/raspberry-pi-debian:latest
+FROM balenalib/raspberrypi4-64-debian:latest
+
+RUN dpkg --add-architecture armhf
 
 RUN apt-get update && \
     apt-get install -qqy --no-install-recommends wget && \
