@@ -3,7 +3,7 @@ FROM balenalib/raspberrypi4-64-debian:latest
 RUN dpkg --add-architecture armhf
 
 RUN apt-get update && \
-    apt-get install -qqy --no-install-recommends wget && \
+    apt-get install -qqy --no-install-recommends wget \
 		libc6:armhf libstdc++6:armhf libssl1.1:armhf \
 		libcurl3-gnutls:armhf \
 		libavahi-compat-libdnssd1:armhf \
