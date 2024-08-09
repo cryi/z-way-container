@@ -9,7 +9,6 @@ RUN apt-get update && \
 		libavahi-compat-libdnssd1:armhf \
 		libmosquitto1:armhf \
 		libarchive13:armhf \
-		libwebsockets8:armhf \
 		zlib1g:armhf && \
 	ldconfig && \
     apt-get clean && \
