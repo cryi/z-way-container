@@ -1,4 +1,4 @@
-Simple container for running z-way-server in docker.
+Simple container for running z-way-server in docker on aarch64.
 
 Sample compose for orange pi 5 Pro 
 
