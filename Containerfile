@@ -4,6 +4,14 @@ RUN dpkg --add-architecture armhf
 
 RUN apt-get update && \
     apt-get install -qqy --no-install-recommends wget && \
+		libc6:armhf libstdc++6:armhf libssl1.1:armhf \
+		libcurl3-gnutls:armhf \
+		libavahi-compat-libdnssd1:armhf \
+		libmosquitto1:armhf \
+		libarchive13:armhf \
+		libwebsockets8:armhf \
+		zlib1g:armhf && \
+	ldconfig && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
