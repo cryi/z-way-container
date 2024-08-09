@@ -1,0 +1,1 @@
+Simple container for running z-way-server in docker.

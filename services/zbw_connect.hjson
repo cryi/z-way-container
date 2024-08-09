@@ -1,0 +1,10 @@
+{
+    executable: sh
+    args: [
+        /service.sh
+		/etc/init.d/zbw_connect
+    ]
+    restart: always
+    restart_delay: 20
+    stop_timeout: 300
+}
