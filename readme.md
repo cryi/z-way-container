@@ -11,9 +11,9 @@ services:
     ports:
       - "8083:8083"
     volumes:
-	  # Persists z-way-server data
+      # Persists z-way-server data
       - ./data:/opt/z-way-server
-	  # Persists z-way-server services, this is needed because services are not part of image
+      # Persists z-way-server services, this is needed because services are not part of image
       - ./services:/etc/init.d/
     restart: unless-stopped
 ```
