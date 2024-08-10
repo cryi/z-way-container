@@ -4,6 +4,7 @@
         /service.sh
 		/etc/init.d/z-way-server
     ]
+    user: zway
     restart: always
     restart_delay: 20
     stop_timeout: 300
