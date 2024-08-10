@@ -20,6 +20,7 @@ install_app() {
     if wget -q -O - https://storage.z-wave.me/RaspbianInstall | bash; then
         if [ -f "/opt/z-way-server/z-way-server" ]; then
             chown -R zway:zway /etc/z-way
+            chown -R zway:zway /etc/zbw
             chown -R zway:zway /opt/z-way-server
             echo "Installed on $(date)" > "$LOG_FILE"
             echo "Installation completed successfully."

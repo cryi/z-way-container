@@ -36,7 +36,8 @@ ADD service.sh /service.sh
 ADD init.sh /init.sh
 RUN chmod a+x /init.sh /service.sh
 
-RUN useradd -M -s /sbin/nologin zway
+RUN useradd -u  -M -s /sbin/nologin zway
+RUN usermod -aG dialout zway
 RUN mkdir -p /etc/zbw
 RUN chown zway:zway /etc/zbw
 
